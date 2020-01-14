@@ -76,6 +76,14 @@ public class Book {
         return Objects.equals(id, book.id);
     }
 
+    public Set<Author> getAuthors() {
+        return authors;
+    }
+
+    public void setAuthors(Set<Author> authors) {
+        this.authors = authors;
+    }
+
     @Override
     public int hashCode() {
         return Objects.hash(id);
